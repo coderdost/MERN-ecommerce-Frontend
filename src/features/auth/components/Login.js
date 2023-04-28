@@ -41,8 +41,7 @@ export default function Login() {
               );
             })}
             className="space-y-6"
-            action="#"
-            method="POST"
+    
           >
             <div>
               <label
