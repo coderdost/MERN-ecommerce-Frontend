@@ -2363,68 +2363,21 @@
     {
       "email": "demo@gmail.com",
       "password": "Qwerty123",
-      "addresses": [],
+      "addresses": [
+        {
+          "name": "Demo user",
+          "email": "demo@gmail.com",
+          "phone": "1234567788",
+          "street": "11th Main",
+          "city": "Mumbai",
+          "state": "Maharastra",
+          "pinCode": "220001"
+        }
+      ],
       "id": 2
     }
   ],
-  "cart": [
-    {
-      "id": 3,
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ],
-      "quantity": 2,
-      "user": 2
-    },
-    {
-      "id": 5,
-      "title": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Huawei",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ],
-      "quantity": 1,
-      "user": 2
-    },
-    {
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-      ],
-      "quantity": 2,
-      "user": 1,
-      "id": 6
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "items": [
@@ -2476,7 +2429,7 @@
         ],
         "id": 1
       },
-      "paymentMethod": "card",
+      "paymentMethod": "cash",
       "selectedAddress": {
         "name": "Abhishek R",
         "email": "test@gmail.com",
@@ -2486,6 +2439,7 @@
         "state": "Karnataka",
         "pinCode": "560034"
       },
+      "status": "pending",
       "id": 1
     },
     {
@@ -2538,7 +2492,7 @@
         ],
         "id": 1
       },
-      "paymentMethod": "card",
+      "paymentMethod": "cash",
       "selectedAddress": {
         "name": "Abhishek R",
         "email": "test@gmail.com",
@@ -2548,193 +2502,78 @@
         "state": "Karnataka",
         "pinCode": "560034"
       },
+      "status": "pending",
       "id": 2
     },
     {
       "items": [
         {
-          "title": "iPhone X",
-          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-          "price": 899,
-          "discountPercentage": 17.94,
-          "rating": 4.44,
-          "stock": 34,
-          "brand": "Apple",
+          "id": 3,
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
           "category": "smartphones",
-          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
           "images": [
-            "https://i.dummyjson.com/data/products/2/1.jpg",
-            "https://i.dummyjson.com/data/products/2/2.jpg",
-            "https://i.dummyjson.com/data/products/2/3.jpg",
-            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/3/1.jpg"
           ],
           "quantity": 2,
-          "user": 1,
-          "id": 6
+          "user": 2
+        },
+        {
+          "id": 5,
+          "title": "Huawei P30",
+          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+          "price": 499,
+          "discountPercentage": 10.58,
+          "rating": 4.09,
+          "stock": 32,
+          "brand": "Huawei",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/5/1.jpg",
+            "https://i.dummyjson.com/data/products/5/2.jpg",
+            "https://i.dummyjson.com/data/products/5/3.jpg"
+          ],
+          "quantity": 1,
+          "user": 2
         }
       ],
-      "totalAmount": 1798,
-      "totalItems": 2,
+      "totalAmount": 2997,
+      "totalItems": 3,
       "user": {
-        "email": "test@gmail.com",
+        "email": "demo@gmail.com",
         "password": "Qwerty123",
         "addresses": [
           {
-            "name": "Abhishek R",
-            "email": "test@gmail.com",
+            "name": "Demo user",
+            "email": "demo@gmail.com",
             "phone": "1234567788",
             "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
-          },
-          {
-            "name": "Abhishek R",
-            "email": "test@gmail.com",
-            "phone": "1234567788",
-            "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
+            "city": "Mumbai",
+            "state": "Maharastra",
+            "pinCode": "220001"
           }
         ],
-        "id": 1
+        "id": 2
       },
       "paymentMethod": "card",
       "selectedAddress": {
-        "name": "Abhishek R",
-        "email": "test@gmail.com",
+        "name": "Demo user",
+        "email": "demo@gmail.com",
         "phone": "1234567788",
         "street": "11th Main",
-        "city": "Banaglore",
-        "state": "Karnataka",
-        "pinCode": "560034"
+        "city": "Mumbai",
+        "state": "Maharastra",
+        "pinCode": "220001"
       },
+      "status": "pending",
       "id": 3
-    },
-    {
-      "items": [
-        {
-          "title": "iPhone X",
-          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-          "price": 899,
-          "discountPercentage": 17.94,
-          "rating": 4.44,
-          "stock": 34,
-          "brand": "Apple",
-          "category": "smartphones",
-          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/2/1.jpg",
-            "https://i.dummyjson.com/data/products/2/2.jpg",
-            "https://i.dummyjson.com/data/products/2/3.jpg",
-            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-          ],
-          "quantity": 2,
-          "user": 1,
-          "id": 6
-        }
-      ],
-      "totalAmount": 1798,
-      "totalItems": 2,
-      "user": {
-        "email": "test@gmail.com",
-        "password": "Qwerty123",
-        "addresses": [
-          {
-            "name": "Abhishek R",
-            "email": "test@gmail.com",
-            "phone": "1234567788",
-            "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
-          },
-          {
-            "name": "Abhishek R",
-            "email": "test@gmail.com",
-            "phone": "1234567788",
-            "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
-          }
-        ],
-        "id": 1
-      },
-      "paymentMethod": "cash",
-      "selectedAddress": {
-        "name": "Abhishek R",
-        "email": "test@gmail.com",
-        "phone": "1234567788",
-        "street": "11th Main",
-        "city": "Banaglore",
-        "state": "Karnataka",
-        "pinCode": "560034"
-      },
-      "id": 4
-    },
-    {
-      "items": [
-        {
-          "title": "iPhone X",
-          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-          "price": 899,
-          "discountPercentage": 17.94,
-          "rating": 4.44,
-          "stock": 34,
-          "brand": "Apple",
-          "category": "smartphones",
-          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/2/1.jpg",
-            "https://i.dummyjson.com/data/products/2/2.jpg",
-            "https://i.dummyjson.com/data/products/2/3.jpg",
-            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-          ],
-          "quantity": 2,
-          "user": 1,
-          "id": 6
-        }
-      ],
-      "totalAmount": 1798,
-      "totalItems": 2,
-      "user": {
-        "email": "test@gmail.com",
-        "password": "Qwerty123",
-        "addresses": [
-          {
-            "name": "Abhishek R",
-            "email": "test@gmail.com",
-            "phone": "1234567788",
-            "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
-          },
-          {
-            "name": "Abhishek R",
-            "email": "test@gmail.com",
-            "phone": "1234567788",
-            "street": "11th Main",
-            "city": "Banaglore",
-            "state": "Karnataka",
-            "pinCode": "560034"
-          }
-        ],
-        "id": 1
-      },
-      "paymentMethod": "cash",
-      "selectedAddress": {
-        "name": "Abhishek R",
-        "email": "test@gmail.com",
-        "phone": "1234567788",
-        "street": "11th Main",
-        "city": "Banaglore",
-        "state": "Karnataka",
-        "pinCode": "560034"
-      },
-      "id": 5
     }
   ]
 }
