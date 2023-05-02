@@ -4,13 +4,7 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from 'react-router-dom';
-import Cart from './features/cart/Cart';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -21,9 +15,7 @@ import { selectLoggedInUser } from './features/auth/authSlice';
 import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
 import PageNotFound from './pages/404';
 import OrderSuccessPage from './pages/OrderSuccessPage';
-import UserOrders from './features/user/components/UserOrders';
 import UserOrdersPage from './pages/UserOrdersPage';
-import UserProfile from './features/user/components/UserProfile';
 import UserProfilePage from './pages/UserProfilePage';
 import { fetchLoggedInUserAsync } from './features/user/userSlice';
 import Logout from './features/auth/components/Logout';

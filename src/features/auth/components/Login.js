@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, incrementAsync, selectError, selectLoggedInUser } from '../authSlice';
+import { selectError, selectLoggedInUser } from '../authSlice';
 import { Link, Navigate } from 'react-router-dom';
 import { checkUserAsync } from '../authSlice';
 import { useForm } from 'react-hook-form';
 
 export default function Login() {
   const dispatch = useDispatch();
-  const error = useSelector(selectError)
-  const user = useSelector(selectLoggedInUser)
+  const error = useSelector(selectError);
+  const user = useSelector(selectLoggedInUser);
   const {
     register,
     handleSubmit,
@@ -19,7 +18,7 @@ export default function Login() {
 
   return (
     <>
-      {user && <Navigate to='/' replace={true}></Navigate>}
+      {user && <Navigate to="/" replace={true}></Navigate>}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -41,7 +40,6 @@ export default function Login() {
               );
             })}
             className="space-y-6"
-    
           >
             <div>
               <label
@@ -79,7 +77,7 @@ export default function Login() {
                 </label>
                 <div className="text-sm">
                   <Link
-                     to="/forgot-password"
+                    to="/forgot-password"
                     className="font-semibold text-indigo-600 hover:text-indigo-500"
                   >
                     Forgot password?
@@ -99,9 +97,7 @@ export default function Login() {
                   <p className="text-red-500">{errors.password.message}</p>
                 )}
               </div>
-              {error && (
-                  <p className="text-red-500">{error.message}</p>
-                )}
+              {error && <p className="text-red-500">{error.message}</p>}
             </div>
 
             <div>
