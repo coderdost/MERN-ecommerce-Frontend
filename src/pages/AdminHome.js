@@ -7,6 +7,7 @@ function AdminHome() {
             <NavBar>
                 <AdminProductList></AdminProductList>
             </NavBar>
+            Foot
         </div>
      );
 }
