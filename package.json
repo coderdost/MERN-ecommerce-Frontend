@@ -1,6 +1,7 @@
 {
   "name": "react-ecommerce",
   "version": "0.1.0",
+  "proxy":"http://localhost:8080",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.14",
